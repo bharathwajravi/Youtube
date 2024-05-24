@@ -183,16 +183,12 @@ def main():
         else:   
             st.write("No data found.")
 
-        with st.expander("What is the total number of likes and dislikes for each video, and what are their corresponding video names?"):
+       
+     with st.expander("What is the total number of likes and dislikes for each video, and what are their corresponding video names?"):
 
-       message = """Unfortunately, due to a privacy update in December 2021, retrieving exact dislike counts for YouTube videos is no longer possible through the API. 
+        message ="Unfortunately, due to a privacy update in December 2021, retrieving exact dislike counts for YouTube videos is no longer possible through the API. "
 
-        However, you can still get information like view counts and like counts. 
-
-        Would you like to see available video details (excluding dislikes) or explore alternative methods for engagement metrics?
-        """
-
-     st.write(message)
+        st.write(message)
      with st.expander("What is the total number of views for each channel, and what are their corresponding channel names?"):
        
         result = []
