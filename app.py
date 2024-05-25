@@ -134,7 +134,7 @@ def main():
         # Displaying the results in a table
         if result:
             st.write("Channles with most number of videos: ")
-            df = pd.DataFrame(result, columns=["Video Name", "Channel Name"])
+            df = pd.DataFrame(result, columns=["Channel Name", "Video Count"])
             st.write(df)
         else:
             st.write("No data found.")
